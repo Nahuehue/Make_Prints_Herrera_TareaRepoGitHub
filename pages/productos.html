@@ -1,64 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo.css">
+    <!--animacion de js-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Productos</title>
 </head>
+
 <body>
-    <header class="header sticky ">
-        <div class="header__div">
-            <a href="#"></a>
-            <img src="../images/logo.jpg" alt="logo">
-        </div>
+    <div class="grid">
+        <header class=" flex sticky backGroundDor borderBottom mb-20">
+            <div>
+                <img src="../images/logo.jpg" alt="logo">
+            </div>
 
-        <nav class="header__nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li> <a href="../pages/usuario.html">Usuario</a> </li>  
-                <li> <a href="../pages/productos.html">Productos</a> </li>
-                <li> <a href="../pages/encargues.html">Encargues</a></li>
-                <li> <a href="../pages/nosotros.html">Nosotros</a></li>
-            
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li> <a href="../pages/usuario.html">Usuario</a> </li>
+                    <li> <a href="../pages/encargues.html">Encargues</a></li>
+                    <li> <a href="../pages/nosotros.html">Nosotros</a></li>
 
-    <h1>Productos</h1>
-    <article>
-    
-        <a href="#"><!-- aca iria el enlace hhacia agregar a carrito o compra-->
-        <img src="../images/chicaMagOS.png" alt="itemMagaOs">
-        </a>
-    
-    
-    
-        <a href="#"><!-- aca iria el enlace hhacia agregar a carrito o compra-->
-        <img src="../images/mateStich.png" alt="mateStich">
-        </a>
-    
+                </ul>
+            </nav>
+        </header>
+        <main class="gridMainProd">
 
-    
-        <a href="#"><!-- aca iria el enlace hhacia agregar a carrito o compra-->
-        <img src="../images/PosaJoysPVZ.png" alt="posa Joystick Plantas vs zombies">
-     
-    
-        <a href="#"><!-- aca iria el enlace hhacia agregar a carrito o compra-->
-        <img src="../images/mateMundial.png" alt="mateMundial">
-        </a>
-    </article>
+            <h1 class="titulo" data-aos="fade-down">Productos</h1>
+
+            <h2 class="tituloFig" data-aos="fade-left">Figura Chica Maga Oscura</h2>
+
+            <div class="imgIzq img-fluid" data-aos="fade-down">
+                <a href="#">
+                    <!-- aca iria el enlace hhacia agregar a carrito o compra-->
+                    <img src="../images/chicaMagOS.png" alt="itemMagaOs">
+                </a>
+            </div>
+
+            <h2 class="tituloFig1" data-aos="fade-down">Mate Stich</h2>
+
+            <div class="imgMedio img-fluid" data-aos="fade-down">
+                <a href="#">
+                    <!-- aca iria el enlace hhacia agregar a carrito o compra-->
+                    <img src="../images/mateStich.png" alt="mateStich">
+                </a>
+            </div>
+
+            <h2 class="tituloFig2" data-aos="fade-right">Posa Joystick PVZ Vs Zombies</h2>
+
+            <div class="imgMedio1 img-fluid" data-aos="fade-down">
+                <a href="#">
+                    <!-- aca iria el enlace hhacia agregar a carrito o compra-->
+                    <img src="../images/PosaJoysPVZ.png" alt="posa Joystick Plantas vs zombies">
+                </a>
+            </div>
+
+            <h2 class="tituloFig3" data-aos="fade-right">Mate Mundial</h2>
+
+            <div class="imgDer img-fluid" data-aos="fade-down">
+                <a href="#">
+                    <!-- aca iria el enlace hhacia agregar a carrito o compra-->
+                    <img src="../images/mateMundial.png" alt="mateMundial">
+                </a>
+            </div>
+
+        </main>
+
+        <footer class="flex backGroundDor ">
+            <div>
+                <h4>REDES SOCIALES</h4>
+            </div>
+            <section>
+
+                <a href="https://www.instagram.com/make_prints_/" target="_blank"> <img src="../images/logoinsta.png"
+                        alt="logoinsta"></a>
+
+            </section>
+
+            <section>
+                <img src="../images/logo.jpg" alt="logoFoo">
+            </section>
 
 
+        </footer>
 
-    <footer>
-        <section>
-            <h4 >REDES</h4>
-            
-            <a href="https://www.instagram.com/make_prints_/" target="_blank"> <img src="../images/logoinsta.png" alt="logoinsta" ></a>
-           
-        </section>
-</footer> 
+    </div>
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

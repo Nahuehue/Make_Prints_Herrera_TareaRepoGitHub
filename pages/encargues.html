@@ -1,66 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo.css">
+    <!--animacion de js-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Encargues</title>
 </head>
+
 <body>
-    <header class="header sticky ">
-        <div class="header__div">
-            <a href="#"></a>
-            <img src="../images/logo.jpg" alt="logo">
-        </div>
+    <div class="grid">
+        <header class="flex sticky backGroundDor borderBottom mb-20">
+            <div>
+                <img src="../images/logo.jpg" alt="logo">
+            </div>
 
-        <nav class="header__nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li> <a href="../pages/usuario.html">Usuario</a> </li>  
-                <li> <a href="../pages/productos.html">Productos</a> </li>
-                <li> <a href="../pages/encargues.html">Encargues</a></li>
-                <li> <a href="../pages/nosotros.html">Nosotros</a></li>
-            
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li> <a href="../pages/usuario.html">Usuario</a> </li>
+                    <li> <a href="../pages/productos.html">Productos</a> </li>
+                    <li> <a href="../pages/nosotros.html">Nosotros</a></li>
 
-    <h1>Encarga impresiones especificas o dejanos consultas!</h1>
-    <article >
-        <p class="p__innformativo">Somos Make Prints una pyme relacionada al mundo 3d, hacemos de todo con la calidad de siempre</p>
-        <p class="p__informartivo"> Te pedimos que por favor nos dejes tus datos y tu consulta! podes consultar reingresos de productos si tenemos stock, y podes encargarnos modelos que no estan publicados o modelos que te interesen que hagamos especificamente para vos!</p>
-    </article>
+                </ul>
+            </nav>
+        </header>
+        <main class="gridMainEncar">
 
-    <article>
-        <h2 >Dejanos tus datos para responder!</h2>
-        <form action="#" class="div_form">
-            <input type="text"placeholder="ingrese nombre" >
-            <input type="email"placeholder="ingrese email" >
-            <input type="number" placeholder="Ingrese su telefono">
+            <h1 class="titulo" data-aos="fade-down">Encarga impresiones especificas o dejanos consultas!</h1>
 
-            <input type="text"placeholder="empresa(opcional)" >
-           
-            <br>
+            <article class="info" data-aos="fade-left">
+                <p class="p__innformativo">Somos Make Prints una pyme relacionada al mundo 3d, hacemos de todo con la
+                    calidad de siempre</p>
 
-            <label for="" >Consultas!!:
-                <br>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </label>
-            <input type="submit" value="Enviar">
-            
-       
-        </form>
-    </article>
+            </article>
 
 
-    <footer>
+
+            <div class="textoIzq div__info margin " data-aos="fade-right">
+                <h2>Dejanos tus datos para responder!</h2>
+
+                <p class="p__informartivo "> Te pedimos que por favor nos dejes tus datos y tu consulta! podes consultar
+                    reingresos de productos si tenemos stock, y podes encargarnos modelos que no estan publicados o
+                    modelos que te interesen que hagamos especificamente para vos!</p>
+            </div>
+
+
+            <div class="FormDer" data-aos="fade-down">
+
+                <form action="#" class="div_form" data-aos="fade-down">
+                    <input type="text" placeholder="ingrese nombre">
+                    <input type="email" placeholder="ingrese email">
+                    <input type="number" placeholder="Ingrese su telefono">
+
+                    <input type="text" placeholder="empresa(opcional)">
+
+                    <br>
+
+                    <label for="">Consultas!!:
+                        <br>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </label>
+                    <input type="submit" value="Enviar">
+
+                </form>
+            </div>
+        </main>
+
+
+        <footer class="flex backGroundDor ">
+            <div>
+                <h4>REDES SOCIALES</h4>
+            </div>
             <section>
-                <h4 >REDES</h4>
-                
-                <a href="https://www.instagram.com/make_prints_/" target="_blank"> <img src="../images/logoinsta.png" alt="logoinsta" ></a>
-               
+
+                <a href="https://www.instagram.com/make_prints_/" target="_blank"> <img src="../images/logoinsta.png"
+                        alt="logoinsta"></a>
+
             </section>
-    </footer>      
+
+            <section>
+                <img src="../images/logo.jpg" alt="logoFoo">
+            </section>
+
+
+        </footer>
+    </div>
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

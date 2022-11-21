@@ -1,48 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo.css">
+    <!--animacion de js-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Nosostros</title>
 </head>
+
 <body>
-    <header class="header sticky ">
-        <div class="header__div">
-            <a href="#"></a>
-            <img src="../images/logo.jpg" alt="logo">
-        </div>
+    <div class="grid">
+        <header class="flex sticky backGroundDor borderBottom mb-20">
+            <div>
+                <img src="../images/logo.jpg" alt="logo">
+            </div>
 
-        <nav class="header__nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li> <a href="../pages/usuario.html">Usuario</a> </li>  
-                <li> <a href="../pages/productos.html">Productos</a> </li>
-                <li> <a href="../pages/encargues.html">Encargues</a></li>
-                <li> <a href="../pages/nosotros.html">Nosotros</a></li>
-            
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li> <a href="../pages/usuario.html">Usuario</a> </li>
+                    <li> <a href="../pages/productos.html">Productos</a> </li>
+                    <li> <a href="../pages/encargues.html">Encargues</a></li>
 
-    <h1>Sobre Nosotros</h1>
 
-    <article class="div__info">
-        <p class="colorNegro">Somos make prints una pyme dedicado a lo 3d, somos una pyme que se maneja por la zona de san miguel, si tenes alguna consulta o queres preguntarnos algo mas especifico te invitamos ir a  </p> <a href="../pages/encargues.html">encargues y consultas</a>
-    </article>
-    <article>
-         <h2>lugares donde hacemos entregas</h2>
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.418332672878!2d-58.714049785436735!3d-34.5429620804752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd0d7e07c78b%3A0xf879e262f796e21a!2sPlaza%20de%20San%20Miguel!5e0!3m2!1ses-419!2sar!4v1666652561581!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </article>
-      
-    <footer>
-        <section>
-            <h4 >REDES</h4>
-            
-            <a href="https://www.instagram.com/make_prints_/" target="_blank"> <img src="../images/logoinsta.png" alt="logoinsta" ></a>
-           
-        </section>
-</footer> 
+                </ul>
+            </nav>
+        </header>
+
+        <main class="gridMainNos">
+
+            <h1 class="colorBlanco titulo" data-aos="fade-down">Sobre Nosotros</h1>
+
+            <div class="info div__info margin " data-aos="fade-down">
+                <p class="colorNegro">Somos make prints una pyme dedicado a lo 3d, somos una pyme que se maneja por la
+                    zona de san miguel, si tenes alguna consulta o queres preguntarnos algo mas especifico te invitamos
+                    ir a </p> <a href="../pages/encargues.html">encargues y consultas</a>
+            </div>
+
+
+            <div class="tituloMapa" data-aos="fade-down">
+                <h2>Donde entregamos!</h2>
+            </div>
+            <div class="mapa" data-aos="fade-down">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.418332672878!2d-58.714049785436735!3d-34.5429620804752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd0d7e07c78b%3A0xf879e262f796e21a!2sPlaza%20de%20San%20Miguel!5e0!3m2!1ses-419!2sar!4v1666652561581!5m2!1ses-419!2sar"
+                    width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </main>
+
+        <footer class="flex backGroundDor ">
+            <div>
+                <h4>REDES SOCIALES</h4>
+            </div>
+            <section>
+
+                <a href="https://www.instagram.com/make_prints_/" target="_blank"> <img src="../images/logoinsta.png"
+                        alt="logoinsta"></a>
+
+            </section>
+
+            <section>
+                <img src="../images/logo.jpg" alt="logoFoo">
+            </section>
+
+
+        </footer>
+
+
+
+    </div>
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

@@ -1,10 +1,4 @@
 /* clases especificas para usos especificos */
-
-.header{
-    background-color: rgb(51, 47, 47);;
-    padding: 15px;
-
-}
 .header__div{
     background-color: rgba(255, 217, 0, 0.678);
     padding: 10px;
@@ -13,85 +7,269 @@
 .div_form{
     display: inline-block;
     padding: 30px;
-    background-color: rgba(218, 165, 32, 0.89);
+    background-color: rgba(255, 217, 0, 0.678);
     margin: 10px;
  
 }
 
 .div__info{
-    background-color: gold;
+    background-color: rgba(255, 217, 0, 0.678);
 }
 
 
 /* el sticky hace que mi nav se superponga todos los otros elementos */
-.sticky{
-    position: sticky;
-    top: 0;
-    z-index: 100;
 
 
-}
-
-.border{
-    border: 1px solid white; 
-}
-.margin{
-    margin: 50px; 
-}
 
 .P__informativo{
     font-style: italic;
 }
-
-/* modificadores que afectan a las etoquetas html */
-ul, ol {
-    list-style-type: none;
- }
-li{
+.imglogo{
     display: inline-block;
-    padding: 8px;
-    background-color: goldenrod;
-}
-img{
-    display: inline-block;
-    padding: 8px;
+    
     margin: 5px 15px ;
     background-color: gold;
+   
     
 }
+
+/* modificadores que afectan a las etiquetas html */
+
+.flex, ul, ol { list-style-type: none; display:flex;}
+
+.borderBottom{border-bottom: 1px solid gold;}
+
+.mb-20{margin-bottom:20px;}
+
+li{list-style-type: none;    
+    display: inline-block;
+    padding: 8px;
+}
+
+.img-fluid{
+    display: inline-block;
+    padding: 2px;
+   
+    background-color: gold;
+}
+.align_fin{
+    display:flex;flex-direction:row;align-items: flex-end;
+}
+
 body{
     background-color: black;
 }
 
-footer{
-    background-color: goldenrod;
-    padding: 30px;
-    margin: 50px;
-}
-.colorBlanco{
-    color:white;
+
+.colorBlanco{ color:white;}
+
+.colorNegro{color:black;}
+
+h1{ color: white;font-family: 'Times New Roman', Times, serif;text-align: center;}
+
+h2{ color: whitesmoke; text-align: center;}
+
+h4{ font-style: italic; color: black;}
+
+p{ color: white;font-family: Arial, Helvetica, sans-serif;padding: 10px;}
+
+.margin{
+    margin: 10px;
 }
 
-.colorNegro{
-    color:black;
+/*grids*/
+.grid{
+    display:grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+}
+header{grid-area:header;padding:2px 0;}
+main{grid-area:main;}
+footer{grid-area:footer;padding: 50px 0;}
+
+.titulo{grid-area: titulo;}
+.info{grid-area: info;}
+.tituloFig{grid-area: tituloFig;}
+.tituloFig1{grid-area: tituloFig1;}
+.tituloFig2{grid-area: tituloFig2;}
+.tituloFig3{grid-area: tituloFig3;}
+.imgIzq{grid-area: imgIzq;;}/*alto ancho*/
+.imgMedio{grid-area: imgMedio;}/*alto ancho*/
+.imgMedio1{grid-area: imgMedio1;}
+.imgDer{grid-area: imgDer;}
+.textoIzq{grid-area:textoIzq;}
+.textoDer{grid-area: textoDer; }
+.formIzq{grid-area: formIzq;}
+.formDer{grid-area: formDer;}
+.tituloMapa{grid-area: tituloMapa;}
+.mapa{grid-area: mapa;}
+
+
+nav{display: flex;
+    width: 100%;
+    justify-content: flex-end;}
+
+.flex, ul{display:flex;}
+.backGroundDor{background-color:  rgba(255, 217, 0, 0.678);}
+
+
+.acomodado{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    
+}
+.p-20{
+    padding: 20px;
+}
+/*mobile*/
+@media screen and (max-width:768px){
+    .flex{justify-content: center;}
+
+
+    ul{flex-wrap: wrap;}
+    a{font-size:1.3rem;}
+
+    .gridMainIndex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gridMainUser{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gridMainProd{ display: flex;
+        flex-direction: column;
+        align-items: center;}
+
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gridMainEncar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .gridMainNos{
+        display:grid;
+        grid-template-areas: 
+        "titulo  "
+        "info" 
+        "tituloMapa" 
+        " mapa";
+        grid-template-columns: 100% ;
+        grid-template-rows:repeat(4, auto) ;
+    }
+  
+
+
+
+    .mapa iframe{height: 300px;}
+
 }
 
-h1{
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
+/*desktop*/
+@media screen and (min-width:1024px){
+    .sticky{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .gridMainIndex{
+        display:grid;
+        grid-template-areas: 
+        "titulo titulo titulo titulo titulo titulo"
+        "info info info info info info"
+        "tituloFig tituloFig tituloFig tituloFig tituloFig tituloFig"
+        "imgIzq imgIzq imgMedio imgMedio imgDer imgDer"
+        "textoIzq textoIzq textoIzq textoDer textoDer textoDer" ;
+        grid-template-columns: repeat(6,16.6) ;
+        grid-template-rows: auto auto auto auto auto ;
+    }
+
+    
+    .gridMainUser{
+        display:grid;
+        grid-template-areas: 
+        "titulo  titulo"
+        "info info"
+        "FormIzq FormDer" ;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: auto auto auto ;
+    }
+
+    .gridMainNos{
+        display:grid;
+        grid-template-areas: 
+        "titulo  titulo"
+        "info tituloMapa" 
+        "info mapa";
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: auto auto  auto;
+    }
+
+    
+    .gridMainProd{
+            display:grid;
+            grid-template-areas: 
+            "titulo titulo titulo titulo titulo titulo"
+            "tituloFig tituloFig tituloFig1 tituloFig1 tituloFig2 tituloFig2"
+            "imgIzq imgIzq imgMedio imgMedio imgMedio1 imgMedio1 "
+            "tituloFig3 tituloFig3 tituloFig3 tituloFig3 tituloFig3 tituloFig3 "
+            "imgDer imgDer imgDer  imgDer imgDer imgDer"
+            ;
+            grid-template-columns: repeat(6,16.6) ;
+            grid-template-rows: auto auto auto auto  ;
+    }
+
+    .gridMainEncar{
+        display:grid;
+        grid-template-areas: 
+        "titulo titulo "
+        "info info  "
+        "textoIzq formDer ";
+
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: auto auto auto    ;
+    }
+    
+
+    .mapa iframe{height: 600px;}
+
+/* TRANSITION */
+    li a{
+        background-color: rgba(255, 217, 0, 0.678);
+        margin: 2px;
+    } 
+
+    li a:hover{
+       background-color: black;
+        color: white;
+    }
+
+    input {width: 50px;transition: all 1s ;}
+    input:focus{width: 60px;font-size:1.1rem;}
+    }
+
+    textarea{ width: 250px; transition: all 1s;
+    }
+    textarea:focus{width: 400px;font: size 1.3rem; ;}
+
+
+
 }
 
-h2{
-    color: whitesmoke;
-}
-h4{
-    font-style: italic;
-    color: black;
-
- 
-}
-p{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-}
